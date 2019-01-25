@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int number,value,result=0,rem,n;
+clrscr();
+scanf("%d",&number);
+value=number;
+while(value!=0)
+{
+value=value/10;
+n++;
+}
+while(value!=0)
+{
+rem=value%10;
+result=result+pow(rem,n);
+value=value/10;
+}
+if(result==number)
+{
+printf("yes");
+}
+else
+{
+printf("no");
+}
+getch();
+}
